@@ -13,6 +13,9 @@ const authConfig = NextAuth({
       return !!auth?.user;
     },
   },
+  pages: {
+    signIn: '/login',
+  },
 });
 
 export const {
